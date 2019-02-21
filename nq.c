@@ -36,6 +36,7 @@ int evaluate(int q[]) {
 
 	while (viable && ++i < nq) {
 		for (int j = 0; j < nq; j++) {
+			// Find horizontal and vertical offsets.
 			int dx = abs(j - i);
 			int dy = abs(q[j] - q[i]);
 			// Same offset on x and y axis implies a diagonal.
