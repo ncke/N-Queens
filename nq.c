@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SOLUTION_REJECTED 		0
-#define SOLUTION_NOT_REJECTED	1
+#define SOLUTION_REJECTED 0
+#define SOLUTION_NOT_REJECTED 1
 
 int nq;	// Number of queens in problem.
 int solutions = 0; // Total number of solutions.
@@ -67,8 +67,8 @@ int main(int argc, char *argv[]) {
 	if (argc < 2) {
 		// Argument required to specify the magnitude of the problem.
 		printf("Usage: pass the number of queens as an argument.\n");
-    }
-    else {
+	}
+	else {
     	// Get problem magnitude.
 		nq = atoi(argv[1]);
     	printf("Solving for %d queens\n\n", nq);
